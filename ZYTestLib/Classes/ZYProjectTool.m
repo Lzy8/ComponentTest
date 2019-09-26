@@ -33,4 +33,7 @@
 + (NSString *)getNewSth{
     return @"`";
 }
++ (NSString *)getNewSthT{
+    return @"1";
+}
 @end

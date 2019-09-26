@@ -21,4 +21,5 @@
 + (NSString *)getUUIDString;
 
 + (NSString *)getNewSth;
++ (NSString *)getNewSthT;
 @end
