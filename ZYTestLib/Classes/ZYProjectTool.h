@@ -19,4 +19,6 @@
  */
 + (NSString *)md5ByString:(NSString *)string;
 + (NSString *)getUUIDString;
+
++ (NSString *)getNewSth;
 @end

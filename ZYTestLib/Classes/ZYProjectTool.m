@@ -29,4 +29,8 @@
     NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     return idfv;
 }
+
++ (NSString *)getNewSth{
+    return @"`";
+}
 @end
