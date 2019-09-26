@@ -22,4 +22,5 @@
 
 + (NSString *)getNewSth;
 + (NSString *)getNewSthT;
++ (NSString *)getNewSthTo;
 @end

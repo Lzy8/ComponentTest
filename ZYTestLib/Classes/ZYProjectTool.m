@@ -8,6 +8,7 @@
 
 #import "ZYProjectTool.h"
 #import <CommonCrypto/CommonDigest.h>
+#import <UIKit/UIKit.h>
 @implementation ZYProjectTool
 #pragma mark - MD5加密
 + (NSString *)md5ByString:(NSString *)string
@@ -35,5 +36,8 @@
 }
 + (NSString *)getNewSthT{
     return @"1";
+}
++ (NSString *)getNewSthTo{
+    return @"1212";
 }
 @end
