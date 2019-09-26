@@ -1,0 +1,6 @@
+framework module ZYTestLib {
+  umbrella header "ZYTestLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

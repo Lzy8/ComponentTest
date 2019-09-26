@@ -1,0 +1,16 @@
+PODS:
+  - ZYTestLib (0.1.0)
+
+DEPENDENCIES:
+  - ZYTestLib (from `../`)
+
+EXTERNAL SOURCES:
+  ZYTestLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZYTestLib: 5c3b7d0094f42ee522f0a72d830a72617ad13a0e
+
+PODFILE CHECKSUM: cc2f12534d2aeef937553187efeb3df65cabc7f5
+
+COCOAPODS: 1.6.1
