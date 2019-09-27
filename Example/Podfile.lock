@@ -1,16 +1,38 @@
 PODS:
-  - ZYTestLib (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - ZYTestLib (0.4.1):
+    - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.2.1)
   - ZYTestLib (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   ZYTestLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZYTestLib: 5c3b7d0094f42ee522f0a72d830a72617ad13a0e
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  ZYTestLib: 98f8301a19182bd386f56329c53e05efc6926cd4
 
-PODFILE CHECKSUM: cc2f12534d2aeef937553187efeb3df65cabc7f5
+PODFILE CHECKSUM: d7406fa53b0d32266467e40346f96a53823a4b2d
 
 COCOAPODS: 1.6.1

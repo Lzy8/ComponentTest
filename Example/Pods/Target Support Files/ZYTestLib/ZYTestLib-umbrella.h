@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "ZYProjectTool.h"
 
 FOUNDATION_EXPORT double ZYTestLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZYTestLibVersionString[];

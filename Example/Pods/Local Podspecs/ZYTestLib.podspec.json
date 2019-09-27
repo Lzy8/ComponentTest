@@ -1,9 +1,9 @@
 {
   "name": "ZYTestLib",
-  "version": "0.1.0",
-  "summary": "A short description of ZYTestLib.",
+  "version": "0.4.1",
+  "summary": "ZYTest iOS Components",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lzy/ZYTestLib",
+  "homepage": "https://github.com/Lzy8/ComponentTest",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "lzy": "752182124@qq.com"
   },
   "source": {
-    "git": "https://github.com/lzy/ZYTestLib.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Lzy8/ComponentTest.git",
+    "tag": "0.4.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZYTestLib/Classes/**/*"
+  "source_files": "ZYTestLib/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.2.1"
+    ]
+  }
 }
