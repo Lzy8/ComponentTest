@@ -87,10 +87,9 @@
         
         BOOL isSign = ![baseURL isEqualToString:self.baseURL];
         NSDictionary *params = isSign ? [self signParams:param] : param;
-        
-        [self.manager POST:[NSString stringWithFormat:@"%@/%@",baseURL,path] parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+       
+        [self.manager POST:[NSString stringWithFormat:@"%@/%@",baseURL,path] parameters:params progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
           
-            NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
             weakSelf.rawData = responseObject;
             if (![responseObject[@"status"] integerValue]) {
                 
@@ -141,13 +140,15 @@
 
 -(void)uploadImgesWithParams:(NSDictionary *)param images:(NSArray<NSData *> *)images requestIdentifier:(NSString *)identifier hud:(BOOL)isHud isAvatar:(BOOL)isAvatar{
 
-    [self.manager POST:[NSString stringWithFormat:@"%@/%@",@"",@"/bhtreatmentimage/addAvator"] parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    [self.manager POST:[NSString stringWithFormat:@"%@/%@",@"",@"/bhtreatmentimage/addAvator"]
+            parameters:param
+               constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         for (int i = 0; i < images.count; i++) {
             NSData *imgData = images[i];
             NSString *name = isAvatar ? @"file" : [NSString stringWithFormat:@"avatar%d",i];
-            [formData appendPartWithFileData:imgData name:name fileName:[NSString stringWithFormat:@"avatar%d%@.jpeg",i,[NSString stringWithFormat:@"%ld",(NSInteger)[[NSDate date] timeIntervalSince1970]]] mimeType:@"image/jpeg"];
+            [formData appendPartWithFileData:imgData name:name fileName:[NSString stringWithFormat:@"avatar%d%@.jpeg",i,[NSString stringWithFormat:@"%ld",(long)[[NSDate date] timeIntervalSince1970]]] mimeType:@"image/jpeg"];
         }
-    } success:^(NSURLSessionDataTask *task, id responseObject) {
+    } progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"param~~%@,response:---%@",param,responseObject);
   
         self.rawData = responseObject;
