@@ -104,6 +104,7 @@
 		513C943891A443EF8C977124BE5CA290 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		573EB9D5233DDB3D00B6F77B /* ZYNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYNetworkRequest.h; path = ZYTestLib/Classes/ZYNetworkRequest.h; sourceTree = "<group>"; };
 		573EB9D6233DDB3D00B6F77B /* ZYNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYNetworkRequest.m; path = ZYTestLib/Classes/ZYNetworkRequest.m; sourceTree = "<group>"; };
+		573EB9DC233DF3F400B6F77B /* ZYTestImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZYTestImage.xcassets; sourceTree = "<group>"; };
 		581E68AE7A15C4BD739A6208820F3417 /* libPods-ZYTestLib_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYTestLib_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F681469FF4723E92BD5813F12474A0F /* Pods-ZYTestLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYTestLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64D15DDDAEDBDBBA699C874FFC8001E6 /* Pods-ZYTestLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTestLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -216,6 +217,7 @@
 		24CFC3692150E5E56105E2586138AE53 /* ZYTestLib */ = {
 			isa = PBXGroup;
 			children = (
+				573EB9DB233DF3F400B6F77B /* Resources */,
 				573EB9D5233DDB3D00B6F77B /* ZYNetworkRequest.h */,
 				573EB9D6233DDB3D00B6F77B /* ZYNetworkRequest.m */,
 				1DB79894A9912AA58B7D99B250BCED30 /* ZYProjectTool.h */,
@@ -253,6 +255,15 @@
 				2CFA98613EEBAA3A034362F535BCB8AD /* ZYTestLib.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		573EB9DB233DF3F400B6F77B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				573EB9DC233DF3F400B6F77B /* ZYTestImage.xcassets */,
+			);
+			name = Resources;
+			path = ZYTestLib/Assets/Resources;
 			sourceTree = "<group>";
 		};
 		5F5C355BA2052FE575854E1900876ED5 /* Pods-ZYTestLib_Tests */ = {

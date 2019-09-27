@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ZYTestLib/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZYTestLib' => ['ZYTestLib/Assets/*.png']
-  # }
+  s.resource_bundles = {
+      'ZYTestLib' => ['ZYTestLib/Assets/Resources/*.{png,xib,storyboard,xcassets}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
