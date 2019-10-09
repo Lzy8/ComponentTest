@@ -27,6 +27,8 @@
 		50FA7FB55AB0B6EE328F078F83953B88 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC8BC54E647FF9C7A355425BEC5C3BB /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		573EB9D7233DDB3D00B6F77B /* ZYNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 573EB9D5233DDB3D00B6F77B /* ZYNetworkRequest.h */; };
 		573EB9D8233DDB3D00B6F77B /* ZYNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 573EB9D6233DDB3D00B6F77B /* ZYNetworkRequest.m */; };
+		578F092D234DC9A700BB0404 /* ZYTestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 578F092B234DC9A700BB0404 /* ZYTestViewController.h */; };
+		578F092E234DC9A700BB0404 /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578F092C234DC9A700BB0404 /* ZYTestViewController.m */; };
 		5CA4BF972E5149C07FF6797B2419DA69 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3190ED64573DCDF767ACBF9D7BB3A22A /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		622EFD6D2100D9051D89920B9996B302 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD55CCE4A8089B07C4C074428180E15 /* AFURLResponseSerialization.m */; };
 		66E4F66F6C7D19706C21F97C8121AFB4 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD3562B06AFD097C26B09B610834F62 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -106,6 +108,8 @@
 		573EB9D6233DDB3D00B6F77B /* ZYNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYNetworkRequest.m; path = ZYTestLib/Classes/ZYNetworkRequest.m; sourceTree = "<group>"; };
 		573EB9DC233DF3F400B6F77B /* ZYTestImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZYTestImage.xcassets; sourceTree = "<group>"; };
 		573EB9DD233DFA1000B6F77B /* ZYTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZYTest.storyboard; sourceTree = "<group>"; };
+		578F092B234DC9A700BB0404 /* ZYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYTestViewController.h; path = ZYTestLib/Classes/ZYTestViewController.h; sourceTree = "<group>"; };
+		578F092C234DC9A700BB0404 /* ZYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYTestViewController.m; path = ZYTestLib/Classes/ZYTestViewController.m; sourceTree = "<group>"; };
 		581E68AE7A15C4BD739A6208820F3417 /* libPods-ZYTestLib_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYTestLib_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F681469FF4723E92BD5813F12474A0F /* Pods-ZYTestLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYTestLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64D15DDDAEDBDBBA699C874FFC8001E6 /* Pods-ZYTestLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTestLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 		24CFC3692150E5E56105E2586138AE53 /* ZYTestLib */ = {
 			isa = PBXGroup;
 			children = (
+				578F092B234DC9A700BB0404 /* ZYTestViewController.h */,
+				578F092C234DC9A700BB0404 /* ZYTestViewController.m */,
 				573EB9DB233DF3F400B6F77B /* Resources */,
 				573EB9D5233DDB3D00B6F77B /* ZYNetworkRequest.h */,
 				573EB9D6233DDB3D00B6F77B /* ZYNetworkRequest.m */,
@@ -409,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				573EB9D7233DDB3D00B6F77B /* ZYNetworkRequest.h in Headers */,
+				578F092D234DC9A700BB0404 /* ZYTestViewController.h in Headers */,
 				4FEBFF72DCC5B9C9C83BAA3D3BC64DDD /* ZYProjectTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +612,7 @@
 				98B24ACAB9399F5572851330ADACB345 /* ZYProjectTool.m in Sources */,
 				573EB9D8233DDB3D00B6F77B /* ZYNetworkRequest.m in Sources */,
 				0313232819C20E58F46D5828C46C124E /* ZYTestLib-dummy.m in Sources */,
+				578F092E234DC9A700BB0404 /* ZYTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

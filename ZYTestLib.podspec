@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYTestLib'
-  s.version          = '0.4.9'
+  s.version          = '0.5.0'
   s.summary          = 'ZYTest iOS Components，add a sbd'
 
 # This description is used to generate tags and improve search results.

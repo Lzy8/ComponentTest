@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xla-ZO-qf7">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="DA8-yY-ge2">
             <objects>
-                <viewController id="Xla-ZO-qf7" sceneMemberID="viewController">
+                <viewController id="Xla-ZO-qf7" customClass="ZYTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8ni-Xp-H1n"/>
                         <viewControllerLayoutGuide type="bottom" id="th9-wE-aDW"/>
@@ -19,7 +19,19 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ZYTest" id="a5I-K0-omE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i AM FROM PODS TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvn-w5-o2G">
+                                <rect key="frame" x="117" y="330" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wvn-w5-o2G" firstAttribute="leading" secondItem="a5I-K0-omE" secondAttribute="leadingMargin" constant="97" id="APO-Md-rRP"/>
+                            <constraint firstItem="wvn-w5-o2G" firstAttribute="top" secondItem="8ni-Xp-H1n" secondAttribute="bottom" constant="286" id="Vdc-pz-hEO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JW-uu-4yR" userLabel="First Responder" sceneMemberID="firstResponder"/>
