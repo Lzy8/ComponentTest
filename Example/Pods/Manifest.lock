@@ -14,16 +14,27 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - ZYTestLib (0.4.1):
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
+  - ZYSecond (0.1.4):
     - AFNetworking (~> 3.2.1)
+  - ZYTestLib (0.5.0):
+    - AFNetworking (~> 3.2.1)
+    - SDWebImage
+    - ZYSecond (~> 0.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - ZYSecond (~> 0.1.4)
   - ZYTestLib (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - SDWebImage
+  https://github.com/Lzy8/PrivateLib.git:
+    - ZYSecond
 
 EXTERNAL SOURCES:
   ZYTestLib:
@@ -31,8 +42,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  ZYTestLib: 98f8301a19182bd386f56329c53e05efc6926cd4
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
+  ZYSecond: 20b5f9d50408030a5c0b780d30447201cf4a5826
+  ZYTestLib: f6211fd66366104c7f6d20ecf0c5e66b42bc10e7
 
-PODFILE CHECKSUM: d7406fa53b0d32266467e40346f96a53823a4b2d
+PODFILE CHECKSUM: 54906941655b928a6ce2ceedebb47cb2e764674f
 
 COCOAPODS: 1.6.1

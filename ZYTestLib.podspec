@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYTestLib'
-  s.version          = '0.5.0'
+  s.version          = '0.5.1'
   s.summary          = 'ZYTest iOS Components，add a sbd'
 
 # This description is used to generate tags and improve search results.
@@ -41,4 +41,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'AFNetworking', '~> 3.2.1'
    s.dependency 'SDWebImage'
+   s.dependency 'ZYSecond', '~> 0.1.5'
 end

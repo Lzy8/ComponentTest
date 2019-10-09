@@ -1,8 +1,10 @@
 platform :ios, '8.0'
-
+source 'https://github.com/Lzy8/PrivateLib.git'
+source 'https://github.com/CocoaPods/Specs.git'
 target 'ZYTestLib_Example' do
   pod 'ZYTestLib', :path => '../'
   pod 'AFNetworking', '~> 3.2.1'
+  pod 'ZYSecond', '~> 0.1.5'
   target 'ZYTestLib_Tests' do
     inherit! :search_paths
 
