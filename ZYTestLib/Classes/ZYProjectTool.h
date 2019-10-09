@@ -11,7 +11,7 @@
 @interface ZYProjectTool : NSObject
 #pragma mark - MD5加密
 /**
- *  MD5加密
+ *  MD5加密,试试
  *
  *  @param string 要加密的字段
  *
