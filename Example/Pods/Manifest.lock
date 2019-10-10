@@ -1,41 +1,13 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
-  - JGProgressHUD (2.0.4)
-  - SDWebImage (5.1.1):
-    - SDWebImage/Core (= 5.1.1)
-  - SDWebImage/Core (5.1.1)
-  - ZYSecond (0.1.5):
-    - AFNetworking (~> 3.2.1)
-    - JGProgressHUD (~> 2.0)
-  - ZYTestLib (0.5.1):
-    - AFNetworking (~> 3.2.1)
-    - SDWebImage
-    - ZYSecond (~> 0.1.5)
+  - ZYSecond (0.1.6)
+  - ZYTestLib (0.5.2):
+    - ZYSecond (~> 0.1.6)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.2.1)
-  - ZYSecond (~> 0.1.5)
+  - ZYSecond (~> 0.1.6)
   - ZYTestLib (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - JGProgressHUD
-    - SDWebImage
   https://github.com/Lzy8/PrivateLib.git:
     - ZYSecond
 
@@ -44,12 +16,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
-  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
-  ZYSecond: 2bbbbe2bddfdc1beb170e479955048aec3d3a02e
-  ZYTestLib: 0d4a879999f04105c9ff71cb59a2c89cc72b8c56
+  ZYSecond: e78728f314c2e569b222a4c07154515ff65608ab
+  ZYTestLib: 331f74e81f7e9e12d241cff69543daebab7fa8de
 
-PODFILE CHECKSUM: e862b132664bd59a50c5229c14ad36cc79830abc
+PODFILE CHECKSUM: d41414b1c43f4923a5f74991c14321423d336094
 
 COCOAPODS: 1.6.1

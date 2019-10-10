@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYTestLib'
-  s.version          = '0.5.1'
+  s.version          = '0.5.2'
   s.summary          = 'ZYTest iOS Components，add a sbd'
 
 # This description is used to generate tags and improve search results.
@@ -35,11 +35,12 @@ TODO: Add long description of the pod here.
   #s.resource_bundles = {
   #    'ZYTestLib' => ['ZYTestLib/Assets/Resources/*.{png,xib,storyboard,xcassets}']
   #}
-  s.resource = 'ZYTestLib/Assets/Resources/*.{png,xib,storyboard,xcassets}'
+  #s.resource = 'ZYTestLib/Assets/Resources/*.{png,xib,storyboard,xcassets}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'AFNetworking', '~> 3.2.1'
-   s.dependency 'SDWebImage'
-   s.dependency 'ZYSecond', '~> 0.1.5'
+  #s.dependency 'AFNetworking', '~> 3.2.1'
+  #s.dependency 'SDWebImage'
+   s.dependency 'ZYSecond', '~> 0.1.6'
+   #s.dependency 'ZYSecond'
 end
