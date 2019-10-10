@@ -29,7 +29,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-kZ-tH8">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="e2R-Op-L6k">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroun4" translatesAutoresizingMaskIntoConstraints="NO" id="e2R-Op-L6k">
                                                 <rect key="frame" x="20" y="100" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="7pl-TM-a8i"/>
@@ -228,7 +228,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcM-vt-w8S">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-Xv-yhU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroun4" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-Xv-yhU">
                                                 <rect key="frame" x="20" y="100" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="8TL-5x-QYh"/>
@@ -412,6 +412,5 @@
     <resources>
         <image name="backgroun4" width="600" height="898.5"/>
         <image name="loginbg2" width="460" height="752"/>
-        <image name="logo" width="16" height="16"/>
     </resources>
 </document>

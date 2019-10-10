@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "ZYHUDTool.h"
+#import "ZYProjectTool.h"
 //#import "PCCircleViewConst.h"
 static NSString *kRequetOperationLogin = @"kRequetOperationLogin";
 static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
@@ -94,7 +96,7 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
 -(void)loginRequest{
     
     NSMutableDictionary *params = [@{} mutableCopy];
-    NSString *pwd = [NSString stringWithFormat:@"%@%@",self.pwdTextField.text,INTERFACE_SIGN_KEY];
+    NSString *pwd = [NSString stringWithFormat:@"%@%@",self.pwdTextField.text,@""];
     params[@"username"] = self.userNameTextField.text;
     params[@"password"] = [ZYProjectTool md5ByString:pwd].uppercaseString;
     params[@"imei"] = [ZYProjectTool getUUIDString];
@@ -111,8 +113,8 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
     NSMutableDictionary *params = [@{} mutableCopy];
     params[@"username"] = self.userNameTextField.text;
     params[@"mark"] = @"login";
-    params[@"timestamp"] = [NSString stringWithFormat:@"%ld",(NSInteger)[[NSDate date] timeIntervalSince1970]];
-    [self.requestManager loadDataWithParams:params requestIdentifier:kRequetOperationMsgCodeSend hud:NO baseURL:DEF_NETPATH_PHP path:@"Applogin/sendCode"];
+    params[@"timestamp"] = [NSString stringWithFormat:@"%ld",(long)[[NSDate date] timeIntervalSince1970]];
+    [self.requestManager loadDataWithParams:params requestIdentifier:kRequetOperationMsgCodeSend hud:NO baseURL:@"" path:@"Applogin/sendCode"];
     
 }
 
@@ -138,9 +140,9 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
             [self dismissViewControllerAnimated:YES completion:^{
                 if (self.loginType && [self.loginType isEqualToString:@"gesture"]) {
 //                    [[self valueForKeyPath:@"modalSourceViewController"] performSelectorOnMainThread:NSSelectorFromString(@"resetGesture") withObject:nil waitUntilDone:YES];
-                    [[NSNotificationCenter defaultCenter] postNotificationName:RESET_GESTURE_AFTER_LOGIN_NOTIFICATION object:nil];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"" object:nil];
                 }else{
-                    [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_NOTIFICATION object:nil];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"" object:nil];
                 }
                 
             }];
@@ -154,7 +156,7 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
         @try {
             [ZYHUDTool showMessage:requestMgr.rawData[@"msg"]];
         } @catch (NSException *exception) {
-            [Bugly reportException:exception];
+//            [Bugly reportException:exception];
         } @finally {}
     }
     
@@ -169,7 +171,7 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
         
         [ZYHUDTool showMessageOnBottom:requestMgr.rawData[@"msg"]];
     } @catch (NSException *exception) {
-        [Bugly reportException:exception];
+//        [Bugly reportException:exception];
     } @finally {}
     
 }
@@ -196,8 +198,8 @@ static NSString *kRequetOperationMsgCodeSend = @"kRequetOperationMsgCodeSend";
     if (!self.msgCodeContainerView.isHidden) return;
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         
-        self.loginBtn.zy_y =self.loginBtn.zy_y + 50;
-        self.forget.zy_y = self.forget.zy_y + 50;
+//        self.loginBtn.zy_y =self.loginBtn.zy_y + 50;
+//        self.forget.zy_y = self.forget.zy_y + 50;
     } completion:^(BOOL finished) {
         self.msgCodeContainerView.alpha = 0.01;
         [UIView animateWithDuration:0.5 animations:^{

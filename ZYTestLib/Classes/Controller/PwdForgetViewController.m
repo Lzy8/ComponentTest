@@ -7,7 +7,8 @@
 //
 
 #import "PwdForgetViewController.h"
-
+#import "ZYHUDTool.h"
+#import "ZYProjectTool.h"
 static NSString *kRequetOperationConfirmEdit = @"kRequetOperationConfirmEdit";
 static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswordMsgCodeSend";
 
@@ -82,7 +83,7 @@ static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswor
 -(void)confirmRequest{
     
     NSMutableDictionary *params = [@{} mutableCopy];
-    NSString *pwd = [NSString stringWithFormat:@"%@%@",self.password.text,INTERFACE_SIGN_KEY];
+    NSString *pwd = [NSString stringWithFormat:@"%@%@",self.password.text,@""];
     params[@"userName"] = self.userName.text;
     params[@"newPassword"] = [ZYProjectTool md5ByString:pwd].uppercaseString;
     params[@"zsessionId"] = @"forgotpassowrd";
@@ -97,8 +98,8 @@ static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswor
     NSMutableDictionary *params = [@{} mutableCopy];
     params[@"username"] = self.userName.text;
     params[@"mark"] = @"forgotpassowrd";
-    params[@"timestamp"] = [NSString stringWithFormat:@"%ld",(NSInteger)[[NSDate date] timeIntervalSince1970]];
-    [self.requestManager loadDataWithParams:params requestIdentifier:kRequetOperationPasswordMsgCodeSend hud:NO baseURL:DEF_NETPATH_PHP path:@"Applogin/sendCode"];
+    params[@"timestamp"] = [NSString stringWithFormat:@"%ld",(long)[[NSDate date] timeIntervalSince1970]];
+    [self.requestManager loadDataWithParams:params requestIdentifier:kRequetOperationPasswordMsgCodeSend hud:NO baseURL:@"" path:@"Applogin/sendCode"];
     
 }
 
@@ -114,7 +115,7 @@ static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswor
             
             [self dismissViewControllerAnimated:YES completion:nil];
         } @catch (NSException *exception) {
-            [Bugly reportException:exception];
+//            [Bugly reportException:exception];
         } @finally {}
         
     }
@@ -123,7 +124,7 @@ static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswor
         @try {
             [ZYHUDTool showMessage:requestMgr.rawData[@"msg"]];
         } @catch (NSException *exception) {
-            [Bugly reportException:exception];
+//            [Bugly reportException:exception];
         } @finally {}
     }
     
@@ -138,7 +139,7 @@ static NSString *kRequetOperationPasswordMsgCodeSend = @"kRequetOperationPasswor
         
         [ZYHUDTool showMessageOnBottom:requestMgr.rawData[@"msg"]];
     } @catch (NSException *exception) {
-        [Bugly reportException:exception];
+//        [Bugly reportException:exception];
     } @finally {}
     
 }

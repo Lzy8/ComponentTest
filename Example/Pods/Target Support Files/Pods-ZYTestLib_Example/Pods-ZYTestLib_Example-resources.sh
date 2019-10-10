@@ -97,10 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/JGProgressHUD/JGProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../../ZYTestLib/Assets/Resources/ZYTest.storyboard"
   install_resource "${PODS_ROOT}/../../ZYTestLib/Assets/Resources/ZYTestImage.xcassets"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/JGProgressHUD/JGProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../../ZYTestLib/Assets/Resources/ZYTest.storyboard"
   install_resource "${PODS_ROOT}/../../ZYTestLib/Assets/Resources/ZYTestImage.xcassets"
 fi
